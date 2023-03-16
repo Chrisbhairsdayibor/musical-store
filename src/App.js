@@ -9,7 +9,7 @@ function App() {
 useEffect(() => {
   //run some fn
   let filteredData=productsData.filter((product)=>
-  product.name.toLowerCase.includes(textinput.toLowerCase())
+  product.name.toLowerCase().includes(textinput.toLowerCase())
   )
 setproducts(filteredData)
 }, [textinput])
@@ -47,5 +47,5 @@ src={product.img}
       </div>
       </div>  
   )
-      }
+}
 export default App
